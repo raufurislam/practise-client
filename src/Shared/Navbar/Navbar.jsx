@@ -166,7 +166,7 @@ const Navbar = () => {
         <>
           <div className="text-text1 font-medium">
             <p>{user.displayName || "User"}</p>
-            <p className="text-sm text-text2">{user.email}</p>
+            <p className="text-xs text-text2">{user.email}</p>
           </div>
 
           <div className="border w-full"></div>
@@ -192,7 +192,7 @@ const Navbar = () => {
         {/* Navbar Start */}
         <div className="navbar-start">
           <div className="dropdown">
-            <button
+            {/* <button
               tabIndex={0}
               className="btn btn-ghost pl-0 lg:hidden"
               onClick={() => setMobileMenuVisible(!mobileMenuVisible)}
@@ -211,15 +211,15 @@ const Navbar = () => {
                   d="M4 6h16M4 12h8m-8 6h16"
                 />
               </svg>
-            </button>
-            {mobileMenuVisible && (
+            </button> */}
+            {/* {mobileMenuVisible && (
               <ul
                 tabIndex={0}
                 className="menu menu-sm dropdown-content bg-neutral rounded-box mt-3 w-44 p-2 shadow-md z-50"
               >
                 {links}
               </ul>
-            )}
+            )} */}
           </div>
           <NavLink to="/" className="btn btn-ghost text-xl px-0">
             <img
